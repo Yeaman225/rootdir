@@ -1,0 +1,12 @@
+echo are you sure you want to do this?. IF YOU DONT KNOW WHAT YOU ARE DOING, YOU WILL BREAK YOUR SYSTEM
+
+read -p "Do you want to continue? (y/n): " choice
+
+case "$choice" in 
+  y|Y ) echo "You chose Yes";;
+  n|N ) echo "You chose No";;
+  * ) echo "Invalid option";;
+esac
+
+cd /
+sudo thunar
